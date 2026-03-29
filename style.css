@@ -1,9 +1,9 @@
-/* Definición de Variables */
+
 :root {
-    --militar-dark: #353d2d;    /* Verde bosque oscuro */
-    --militar-olive: #4b5320;   /* Oliva clásico */
-    --militar-accent: #8b9467;  /* Verde seco claro para realces */
-    --earth-light: #f4f1ea;     /* Color crema/arena para fondos */
+    --militar-dark: #353d2d;    
+    --militar-olive: #4b5320;   
+    --militar-accent: #8b9467;  
+    --earth-light: #f4f1ea;     
     --text-main: #2d2d2d;
     --text-light: #f4f1ea;
     --white: #ffffff;
@@ -19,7 +19,7 @@ body {
     background-color: var(--earth-light);
     line-height: 1.6;
     scroll-behavior: smooth;
-    padding-top: 80px; /* Espacio para la navbar fija */
+    padding-top: 80px; 
 }
 
 /* Navbar */
@@ -35,13 +35,13 @@ body {
     font-weight: 600; padding: 8px 16px;
     border-radius: 4px; transition: var(--transition);
 }
-/* EFECTO HOVER EN BOTONES DE NAVEGACIÓN [REQUISITO] */
+
 .nav-link:hover {
     background-color: var(--militar-accent);
     color: var(--militar-dark);
 }
 
-/* Hero Section */
+
 .hero-section {
     padding: 80px 20px;
     background-color: var(--militar-dark);
@@ -92,7 +92,7 @@ body {
 .external-link { color: var(--militar-olive); text-decoration: none; font-weight: 600; }
 .external-link:hover { text-decoration: underline; }
 
-/* BARRA DE ICONOS DE CONTACTO REALES */
+
 .contact-links-bar {
     display: flex;
     justify-content: center;
@@ -105,10 +105,9 @@ body {
     transition: var(--transition);
     text-decoration: none;
 }
-/* EFECTO HOVER EN ICONOS DE CONTACTO [REQUISITO] */
 .contact-icon:hover {
     color: var(--militar-accent);
-    transform: scale(1.15); /* Se agranda un poco */
+    transform: scale(1.15); /* Efecto de agrandamiento al pasar el mouse */
 }
 
 /* Formulario */
@@ -123,7 +122,6 @@ body {
     cursor: pointer; font-weight: bold; text-transform: uppercase;
     transition: var(--transition); border-radius: 4px;
 }
-/* EFECTO HOVER EN BOTÓN DE ENVIAR [REQUISITO] */
 .btn-submit:hover { background-color: var(--militar-dark); }
 
 /* Botón Flotante (JavaScript) */
@@ -153,7 +151,7 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
-    scroll-snap-align: center; /* Centra la foto al deslizar */
+    scroll-snap-align: center; /* Centra cada foto al deslizar */
     border: 2px solid var(--militar-accent);
 }
 
@@ -165,7 +163,6 @@ body {
     font-weight: bold;
 }
 
-/* Personalización de la barra de scroll para Chrome/Safari */
 .carrusel::-webkit-scrollbar {
     height: 8px;
 }
@@ -187,7 +184,7 @@ body {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 4px solid var(--militar-olive); /* Detalle estético militar */
+    border-top: 4px solid var(--militar-olive); 
 }
 
 .skill-group h4 {
@@ -211,24 +208,24 @@ body {
     gap: 15px; /* Espacio entre el logo y el texto */
     padding: 10px;
     border-radius: 5px;
-    transition: var(--transition); /* Suaviza el cambio de color  */
+    transition: var(--transition); 
     cursor: default;
 }
 
-/* ICONOS: Color verde militar inicial */
+/* ICONOS */
 .lista-habilidades li i {
     font-size: 1.4rem;
     color: var(--militar-olive);
-    width: 25px; /* Ancho fijo para que el texto quede alineado */
+    width: 25px; 
     text-align: center;
 }
 
-/* EFECTO HOVER: Cambio de color al seleccionar la habilidad [TU PEDIDO] */
+
 .lista-habilidades li:hover {
     background-color: var(--militar-accent);
     color: var(--white);
 }
 
 .lista-habilidades li:hover i {
-    color: var(--white); /* El icono también cambia a blanco */
+    color: var(--white); 
 }
