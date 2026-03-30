@@ -1,13 +1,13 @@
 
 :root {
-    --militar-dark: #353d2d;    
-    --militar-olive: #4b5320;   
-    --militar-accent: #8b9467;  
-    --earth-light: #f4f1ea;     
-    --text-main: #2d2d2d;
-    --text-light: #f4f1ea;
-    --white: #ffffff;
-    --transition: all 0.3s ease;
+    --color-primario: #353d2d;      /* Antes: --militar-dark */
+    --color-secundario: #4b5320;    /* Antes: --militar-olive */
+    --color-acento: #8b9467;        /* Antes: --militar-accent */
+    --fondo-principal: #f4f1ea;     /* Antes: --earth-light */
+    --texto-principal: #2d2d2d;     /* Antes: --text-main */
+    --texto-claro: #f4f1ea;         /* Antes: --text-light */
+    --fondo-tarjetas: #ffffff;      /* Antes: --white */
+    --transicion-base: all 0.3s ease; /* Antes: --transition */
 }
 
 /* Estilos Globales */
