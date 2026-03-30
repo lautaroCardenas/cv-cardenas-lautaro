@@ -15,11 +15,16 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--text-main);
-    background-color: var(--earth-light);
+    color: var(--texto-principal); /* Usando los nombres del issue #6 */
+    background-color: var(--fondo-principal);
     line-height: 1.6;
     scroll-behavior: smooth;
     padding-top: 80px; 
+}
+
+/* NUEVA REGLA: Aplicamos Montserrat a todos los títulos del CV */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
