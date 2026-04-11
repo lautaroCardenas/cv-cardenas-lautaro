@@ -146,13 +146,13 @@ body {
     scrollbar-color: var(--militar-olive) transparent;
 }
 
-.carrusel img {
-    flex: 0 0 80%; /* Cada foto ocupa el 80% del ancho de la tarjeta */
-    height: 300px;
+.carrusel-img {
+    flex: 0 0 80%; /* Cada foto ocupa el 80% de la tarjeta */
+    height: 18.75rem; /* 300px / 16 = 18.75rem */
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px / 16 = 0.5rem */
     scroll-snap-align: center; /* Centra cada foto al deslizar */
-    border: 2px solid var(--militar-accent);
+    border: 0.125rem solid var(--color-acento); /* Asumiendo que cambiaste el nombre en el issue #6 */
 }
 
 .instruccion-carrusel {
