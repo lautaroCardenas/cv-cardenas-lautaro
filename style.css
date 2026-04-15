@@ -1,4 +1,23 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 :root {
     --militar-dark: #353d2d;    
     --militar-olive: #4b5320;   
@@ -43,18 +62,20 @@ body {
 
 
 .hero-section {
-    padding: 80px 20px;
-    background-color: var(--militar-dark);
+    padding: 5rem 1.25rem; /* 80px / 16 = 5rem | 20px / 16 = 1.25rem */
+    background-color: var(--militar-dark); /* O el nombre semántico que pusiste en el issue 6 */
     color: var(--text-light);
     text-align: center;
 }
+
 .profile-img {
-    width: 180px; height: 180px;
+    width: 11.25rem; /* 180px / 16 = 11.25rem */
+    height: 11.25rem;
     border-radius: 50%;
-    border: 5px solid var(--militar-accent);
-    margin-bottom: 20px;
+    border: 0.3125rem solid var(--militar-accent); /* 5px / 16 = 0.3125rem */
+    margin-bottom: 1.25rem; /* 20px / 16 = 1.25rem */
     object-fit: cover; /* Asegura que la foto real no se deforme */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.3); /* 4px y 15px pasados a rem */
 }
 .main-title { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
 .subtitle { font-size: 1.2rem; color: var(--militar-accent); font-weight: 600; margin-bottom: 20px; }
@@ -146,13 +167,13 @@ body {
     scrollbar-color: var(--militar-olive) transparent;
 }
 
-.carrusel img {
-    flex: 0 0 80%; /* Cada foto ocupa el 80% del ancho de la tarjeta */
-    height: 300px;
+.carrusel-img {
+    flex: 0 0 80%; /* Cada foto ocupa el 80% de la tarjeta */
+    height: 18.75rem; /* 300px / 16 = 18.75rem */
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px / 16 = 0.5rem */
     scroll-snap-align: center; /* Centra cada foto al deslizar */
-    border: 2px solid var(--militar-accent);
+    border: 0.125rem solid var(--color-acento); /* Asumiendo que cambiaste el nombre en el issue #6 */
 }
 
 .instruccion-carrusel {
